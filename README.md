@@ -1,21 +1,26 @@
-# shinebeyond
+# Shine Beyond
 
-[Github](https://github.com/mahammadbakr"Github home")
+[Github](https://github.com/mahammadbakr)
 
 Shine Beyond Package Used to make various type of animated designs
 For your List & Grid Views data when fetches and loading,
 One of the Advantages of using this Packages is You don't have to take a
 long time to organize and create animated widgets.
 
+***
 
 **Steps To Use the Package:**
-STEP 1:
+
+**STEP 1:**
+
 Go to Package and get in to Installing section, Then Copy the dependency Code.
 
-STEP 2:
+**STEP 2:**
+
 Go to "pubspec.yamel" of your project and paste it under the dependencies section.
 
-STEP 3:
+**STEP 3:**
+
 Add these lines of code in to your ListView or GridView Screen:
 ```dart
   var isLoading = true, isStarted = false;
@@ -40,7 +45,9 @@ Add these lines of code in to your ListView or GridView Screen:
 
 
 
-STEP 4: Initialize ShineGridLoader class in your Code and send your List or GridView
+**STEP 4:**
+
+Initialize ShineGridLoader class in your Code and send your List or GridView
 And Send "CHILD" parameter just like below:
 
 - Body Section For Grid View:
@@ -114,6 +121,7 @@ Note that:
 - "ShineListLoader" works with (ShineListWidget and ListWidgetType).
 - "ShineGridLoader" works with (ShineGridWidget and GridWidgetType).
 
+***
 
 **Some Examples of Package Usage:**
 
