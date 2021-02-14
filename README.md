@@ -8,19 +8,19 @@ long time to organize and create animated widgets.
 Some Examples of Package Usage:
 
 1- GridView - rotation
-![til](./app/assets/rotation.gif)
+![til](./assets/rotation.gif)
 
 2- GridView - beating
-![til](./app/assets/beating.gif)
+![til](./assets/beating.gif)
 
 3- GridView - tween
-![til](./app/assets/tween.gif)
+![til](./assets/tween.gif)
 
 4- ListView - mix
-![til](./app/assets/mix.gif)
+![til](./assets/mix.gif)
 
 5- ListView - rectangular
-![til](./app/assets/rectangular.gif)
+![til](./assets/rectangular.gif)
 
 6- ListView - box
-![til](./app/assets/box.gif)
+![til](./assets/box.gif)
