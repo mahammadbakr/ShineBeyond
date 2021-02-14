@@ -15,6 +15,8 @@ Go to "pubspec.yamel" of your project and paste it under the dependencies sectio
 
 STEP 3:
 Add these lines of code in to your ListView or GridView Screen:
+
+```dart
   var isLoading = true, isStarted = false;
   @override
   void initState() {
@@ -24,7 +26,6 @@ Add these lines of code in to your ListView or GridView Screen:
     isStarted = true;
     super.initState();
   }
-
   Future _getDataInToList() async {
     Future.delayed(Duration(seconds: 3), () {
       _list = widget.list;
@@ -33,7 +34,7 @@ Add these lines of code in to your ListView or GridView Screen:
       });
     });
   }
-
+```dart
 
 
 
