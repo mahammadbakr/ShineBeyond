@@ -1,6 +1,6 @@
 part of shinebeyond;
 
-class SkeletonGridLoader extends StatefulWidget {
+class ShineGridLoader extends StatefulWidget {
   /// Number of skeleton items to show
   final int itemCount;
 
@@ -39,7 +39,7 @@ class SkeletonGridLoader extends StatefulWidget {
 
   // final bool isLoading;
 
-  const SkeletonGridLoader({
+  const ShineGridLoader({
     Key key,
     @required this.itemCount,
     @required this.child,
@@ -54,10 +54,10 @@ class SkeletonGridLoader extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _SkeletonGridLoaderState createState() => _SkeletonGridLoaderState();
+  _ShineGridLoaderState createState() => _ShineGridLoaderState();
 }
 
-class _SkeletonGridLoaderState extends State<SkeletonGridLoader> {
+class _ShineGridLoaderState extends State<ShineGridLoader> {
 
 
   @override

@@ -1,7 +1,7 @@
 part of shinebeyond;
 
 
-class SkeletonLoader extends StatefulWidget {
+class ShineListLoader extends StatefulWidget {
   /// Number of skeleton items to show
   /// Default is 1
   final int items;
@@ -25,7 +25,7 @@ class SkeletonLoader extends StatefulWidget {
   /// Defaults to Duration(seconds: 2)
   final Duration period;
 
-  const SkeletonLoader({
+  const ShineListLoader({
     Key key,
     this.items = 1,
     @required this.child,
@@ -36,10 +36,10 @@ class SkeletonLoader extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _SkeletonLoaderState createState() => _SkeletonLoaderState();
+  _ShineListLoaderState createState() => _ShineListLoaderState();
 }
 
-class _SkeletonLoaderState extends State<SkeletonLoader> {
+class _ShineListLoaderState extends State<ShineListLoader> {
   @override
   Widget build(BuildContext context) {
     ShimmerDirection direction = getDirection(widget.direction);
