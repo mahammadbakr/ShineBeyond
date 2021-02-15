@@ -1,6 +1,6 @@
 # Shine Beyond
 
-[Github](https://github.com/mahammadbakr)
+[Github - Mahammad Bakr](https://github.com/mahammadbakr)
 
 Shine Beyond Package Used to make various type of animated designs
 For your List & Grid Views data when fetches and loading,
@@ -17,7 +17,7 @@ Go to Package and get in to Installing section, Then Copy the dependency Code.
 
 **STEP 2:**
 
-Go to "pubspec.yamel" of your project and paste it under the dependencies section.
+Go to "pubspec.yaml" of your project and paste it under the dependencies section.
 
 **STEP 3:**
 
@@ -32,9 +32,8 @@ Add these lines of code in to your ListView or GridView Screen:
     isStarted = true;
     super.initState();
   }
-
   Future _getDataInToList() async {
-    Future.delayed(Duration(seconds: 3), () {
+    Future.delayed(Duration(seconds: 2), () {
       _list = widget.list;
       setState(() {
         isLoading = false;
@@ -51,73 +50,46 @@ Initialize ShineGridLoader class in your Code and send your List or GridView
 And Send "CHILD" parameter just like below:
 
 - Body Section For Grid View:
+
 ```dart
- if (isLoading) {
+ return isLoading ?
       return ShineGridLoader(
         child: ShineGridWidget(itemCount:itemCount, gridWidgetType: GridWidgetType.tween,duration: Duration(milliseconds: 20)),
         itemCount: itemCount,
-        itemsPerRow: 3,
-        shrinkWrap: true,
-        period: Duration(seconds: 2),
         highlightColor: Colors.lightGreen[300],
         direction: ShineDirection.ltr,
-      );
-    } else {
+      ) :
       return GridView.builder(
         itemBuilder: (ctx, i) {
-          Synonym synonym = _synonymsList[i];
-          return Card(
-            child: GridTile(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Text(synonym.name),
-                  Text(synonym.synonym),
-                ],
-              ),
-            ),
-          );
+           Object object = _list[i];
+          return  Text(object.name);
         },
-        itemCount: itemCount,
-        shrinkWrap: true,
-        physics: NeverScrollableScrollPhysics(),
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 3,
-        ),
+        itemCount: itemCount
       );
 ```
 
 - Body Section For List View:
+
 ```dart
-   if (_isLoading) {
+ return isLoading ?
       return ShineListLoader(
-        child: ShineListWidget(listWidgetType: ListWidgetType.box,duration: Duration(milliseconds: 20)),
-        items: 10,
-        period: Duration(seconds: 2),
+        child: ShineListWidget(itemCount:itemCount, listWidgetType: ListWidgetType.mix,duration: Duration(milliseconds: 20)),
+        itemCount: itemCount,
         highlightColor: Colors.lightGreen[300],
         direction: ShineDirection.ltr,
-      );
-    } else {
+      ) :
       return ListView.builder(
         itemBuilder: (ctx, i) {
-          Synonym sc = _synonymList[i];
-          return ListTile(
-            leading: CircleAvatar(
-              child: Text("${i + 1}"),
-            ),
-            title: Text(sc.name),
-            subtitle: Text(sc.synonym),
-          );
+           Object object = _list[i];
+          return  Text(object.name);
         },
-        itemCount: _synonymList.length,
-        shrinkWrap: true,
-        physics: NeverScrollableScrollPhysics(),
+        itemCount: itemCount
       );
 ```
 
 Now Run Your Application and see the Results...
 
-Note that:
+**Note that:**
 - "ShineListLoader" works with (ShineListWidget and ListWidgetType).
 - "ShineGridLoader" works with (ShineGridWidget and GridWidgetType).
 
@@ -126,19 +98,34 @@ Note that:
 **Some Examples of Package Usage:**
 
 1- GridView - rotation
+
 ![til](./assets/rotation.gif)
 
 2- GridView - beating
+
 ![til](./assets/beating.gif)
 
 3- GridView - tween
+
 ![til](./assets/tween.gif)
 
 4- ListView - mix
+
 ![til](./assets/mix.gif)
 
 5- ListView - rectangular
+
 ![til](./assets/rectangular.gif)
 
 6- ListView - box
+
 ![til](./assets/box.gif)
+
+
+
+[GitHub - Mahammad Bakr](https://github.com/mahammadbakr)
+[GitLab - Mahammad Bakr](https://gitlab.com/mahammadbakr77)
+[Facebook - Mahammad Bakr](https://www.facebook.com/mahammad.bakr/)
+[Facebook - Exon Tech](https://www.facebook.com/ئیخۆن-تێک-Exon-Tech-108372014244214)
+**Email:** MahammadBakr77@gmail.com
+**Phone:** +9647502289291
